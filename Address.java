@@ -8,6 +8,8 @@ public class Address {
         city = a_City;
     }
 
+    public String GetStreet() {return street;};
+
     public void setStreet(String street) {
         this.street = street;
     }

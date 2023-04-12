@@ -16,7 +16,7 @@ public class ShallowCopyDemo {
         // change the address of person1
         person1.getAddress().setStreet("456 Broad St");
 
-        System.out.println(person1); // prints "Person[name=Alice, age=30, address=Address[street=456 Broad St, city=Anytown]]"
-        System.out.println(person2); // prints "Person[name=Alice, age=30, address=Address[street=456 Broad St, city=Anytown]]" (note: both objects have the same address)
+        System.out.println(person1.getAddress().GetStreet()); // prints "Person[name=Alice, age=30, address=Address[street=456 Broad St, city=Anytown]]"
+        System.out.println(person2.getAddress().GetStreet()); // prints "Person[name=Alice, age=30, address=Address[street=456 Broad St, city=Anytown]]" (note: both objects have the same address)
     }
 }
